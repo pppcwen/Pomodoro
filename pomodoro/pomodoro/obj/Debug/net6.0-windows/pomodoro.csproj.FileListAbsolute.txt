@@ -28,7 +28,6 @@ C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomod
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.AssemblyInfoInputs.cache
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.AssemblyInfo.cs
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.csproj.CoreCompileInputs.cache
-C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.sourcelink.json
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.dll
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\refint\pomodoro.dll
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.pdb
