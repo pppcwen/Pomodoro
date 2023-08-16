@@ -16,27 +16,38 @@ namespace pomodoro
         }
 
         //定義時間
-        int hr, min, sec,ms;
+        int hr, min, sec, set_hr = 0, set_min = 0, set_sec = 0;
+        bool settime;
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (start_stop_button.Text == "Start")
             {
+                reset_button.Enabled = false;
+                SetTime_button.Enabled = false;
                 timer1.Start();
                 start_stop_button.Text = "Stop";
             }
             else if (start_stop_button.Text == "Stop")
             {
+                reset_button.Enabled = true;
+                SetTime_button.Enabled = true;
                 timer1.Stop();
                 start_stop_button.Text = "Start";
             }
         }
 
 
+
+
         private void sec_textbar_TextChanged(object sender, EventArgs e)
         {
+            //重設時間時在執行
+            if (settime == true)
+            {
             //讀取輸入字串並轉為數字
             int.TryParse(sec_textbar.Text, out sec);
+            set_sec = sec;
             //防止數字超出上限
             if (sec > 60)
             {
@@ -45,6 +56,9 @@ namespace pomodoro
                 sec_textbar.Text = secstr;
             }
         }
+        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -65,6 +79,8 @@ namespace pomodoro
                 start_stop_button.Enabled = false;
                 reset_button.Enabled = false;
                 SetTime_button.Text = "Ok";
+                //當在settime時能儲存數字用在reset
+                settime = true;
             }
             else if (SetTime_button.Text == "Ok")
             {
@@ -74,20 +90,22 @@ namespace pomodoro
                 sec_textbar.Enabled = false;
                 start_stop_button.Enabled = true;
                 reset_button.Enabled = true;
+                //當不在settime時不能儲存數字
+                settime = false;
             }
 
         }
 
         private void reset_button_Click(object sender, EventArgs e)
         {
-            //將所有數字重置
+            //將所有數字重置為上一次設置的時間
             timer1.Stop();
-            hr = 0;
-            min = 0;
-            sec = 0;
-            string hrstr = hr.ToString();
-            string minstr = min.ToString();
-            string secstr = sec.ToString();
+            hr = set_hr;
+            min = set_min;
+            sec = set_sec;
+            string hrstr = set_hr.ToString();
+            string minstr = set_min.ToString();
+            string secstr = set_sec.ToString();
             hr_textbar.Text = hrstr;
             min_textbar.Text = minstr;
             sec_textbar.Text = secstr;
@@ -96,49 +114,53 @@ namespace pomodoro
 
         private void hr_textbar_TextChanged(object sender, EventArgs e)
         {
-            //讀取輸入字串並轉為數字
-            int.TryParse(hr_textbar.Text, out hr);
-            //防止數字超出上限
-            if (hr > 24)
+            //重設時間時在執行
+            if (settime == true)
             {
-                hr = 24;
-                string hrstr = hr.ToString();
-                hr_textbar.Text = hrstr;
+                //讀取輸入字串並轉為數字
+                int.TryParse(hr_textbar.Text, out hr);
+
+                set_hr = hr;
+
+
+                //防止數字超出上限
+                if (hr > 24)
+                {
+                    hr = 24;
+                    string hrstr = hr.ToString();
+                    hr_textbar.Text = hrstr;
+                }
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             //顯示時間運作
-                if (sec == 0)
+            if (sec == 0)
+            {
+                if (min == 0)
                 {
-                    if (min == 0)
+                    if (hr == 0)
                     {
-                        if (hr == 0)
-                        {
-                            timer1.Stop();
-                        }
-                        else
-                        {
-                            hr -= 1;
-                            min = 59;
-                            sec = 59;
-                        
-                        }
+                        timer1.Stop();
                     }
                     else
                     {
-                        min -= 1;
+                        hr -= 1;
+                        min = 59;
                         sec = 59;
-                    
                     }
                 }
                 else
                 {
-                    sec -= 1;
-                
+                    min -= 1;
+                    sec = 59;
                 }
-        
+            }
+            else
+            {
+                sec -= 1;
+            }
             string hrstr = hr.ToString();
             string minstr = min.ToString();
             string secstr = sec.ToString();
@@ -191,14 +213,22 @@ namespace pomodoro
 
         private void min_textbar_TextChanged(object sender, EventArgs e)
         {
-            //讀取輸入字串並轉為數字
-            int.TryParse(min_textbar.Text, out min);
-            //防止數字超出上限
-            if (min > 60)
+            //重設時間時在執行
+            if (settime == true)
             {
-                min = 60;
-                string minstr = min.ToString();
-                min_textbar.Text = minstr;
+                //讀取輸入字串並轉為數字
+                int.TryParse(min_textbar.Text, out min);
+                if (settime == true)
+                {
+                    set_min = min;
+                }
+                //防止數字超出上限
+                if (min > 60)
+                {
+                    min = 60;
+                    string minstr = min.ToString();
+                    min_textbar.Text = minstr;
+                }
             }
         }
     }
