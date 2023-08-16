@@ -9,6 +9,9 @@ namespace pomodoro
         {
             InitializeComponent();
             // TransparencyKey = this.BackColor;
+            hr_textbar.Enabled = false;
+            min_textbar.Enabled = false;
+            sec_textbar.Enabled = false;
 
         }
 
@@ -28,24 +31,9 @@ namespace pomodoro
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void min_textbar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void sec_textbar_TextChanged(object sender, EventArgs e)
         {
@@ -54,11 +42,25 @@ namespace pomodoro
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label1.Text = string.Empty;
         }
 
         private void SetTime_button_Click(object sender, EventArgs e)
         {
+            if (SetTime_button.Text == "Set Time")
+            {
+                hr_textbar.Enabled = true;
+                min_textbar.Enabled = true;
+                sec_textbar.Enabled = true;
+                SetTime_button.Text = "Ok";
+            }
+            else if (SetTime_button.Text == "Ok")
+            {
+                SetTime_button.Text = "Set Time";
+                hr_textbar.Enabled = false;
+                min_textbar.Enabled = false;
+                sec_textbar.Enabled = false;
+            }
 
         }
 
@@ -83,11 +85,11 @@ namespace pomodoro
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(sec==0)
+            if (sec == 0)
             {
-                if(min==0)
+                if (min == 0)
                 {
-                    if(hr==0)
+                    if (hr == 0)
                     {
                         timer1.Stop();
                     }
@@ -114,6 +116,18 @@ namespace pomodoro
             hr_textbar.Text = hrstr;
             min_textbar.Text = minstr;
             sec_textbar.Text = secstr;
+
+            //§PÂ_Åã¥Ü¬Æ»ò¦r
+            if (sec == 0 || min == 0 || hr == 0)
+            {
+                label1.Text = "Congratulations!";
+            }
+            else
+            {
+                label1.Text = "Keep going!";
+            }
         }
+
+
     }
 }

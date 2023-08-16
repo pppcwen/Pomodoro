@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RNs8Skag/xqOyrWsCyMnXNLVbQsfSsjUlAgtQA2wYHTMjSIkWJkL5xDXUrfXTV8Z0GQl9yoUpAKpD7WBSwjlzg==",
+  "dgSpecHash": "tEb9snRZznBSHVPodp2bvFWGpYVA5AEWfAvFZohNpElC7wOMcfqq/qKTQM5q0jjBCM2GrKdeeC249JDHThhumQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\barry\\Desktop\\pomodoro\\pomodoro\\pomodoro\\pomodoro.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\barry\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\barry\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\barry\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\barry\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\User\\Desktop\\pomodoro\\pomodoro\\pomodoro\\pomodoro.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -36,6 +36,7 @@
             min_textbar = new TextBox();
             sec_textbar = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
             SuspendLayout();
             // 
             // start_stop_button
@@ -46,10 +47,9 @@
             start_stop_button.FlatAppearance.BorderSize = 0;
             start_stop_button.FlatStyle = FlatStyle.Flat;
             start_stop_button.Font = new Font("MV Boli", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            start_stop_button.Location = new Point(135, 463);
-            start_stop_button.Margin = new Padding(2);
+            start_stop_button.Location = new Point(210, 731);
             start_stop_button.Name = "start_stop_button";
-            start_stop_button.Size = new Size(104, 58);
+            start_stop_button.Size = new Size(162, 92);
             start_stop_button.TabIndex = 0;
             start_stop_button.Text = "Start";
             start_stop_button.UseVisualStyleBackColor = false;
@@ -63,10 +63,9 @@
             reset_button.FlatAppearance.BorderSize = 0;
             reset_button.FlatStyle = FlatStyle.Flat;
             reset_button.Font = new Font("MV Boli", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            reset_button.Location = new Point(279, 460);
-            reset_button.Margin = new Padding(2);
+            reset_button.Location = new Point(434, 726);
             reset_button.Name = "reset_button";
-            reset_button.Size = new Size(94, 64);
+            reset_button.Size = new Size(146, 101);
             reset_button.TabIndex = 3;
             reset_button.Text = "Reset";
             reset_button.UseVisualStyleBackColor = false;
@@ -80,10 +79,9 @@
             SetTime_button.FlatAppearance.BorderSize = 0;
             SetTime_button.FlatStyle = FlatStyle.Flat;
             SetTime_button.Font = new Font("MV Boli", 13F, FontStyle.Bold, GraphicsUnit.Point);
-            SetTime_button.Location = new Point(395, 457);
-            SetTime_button.Margin = new Padding(2);
+            SetTime_button.Location = new Point(636, 722);
             SetTime_button.Name = "SetTime_button";
-            SetTime_button.Size = new Size(183, 64);
+            SetTime_button.Size = new Size(182, 101);
             SetTime_button.TabIndex = 4;
             SetTime_button.Text = "Set Time";
             SetTime_button.UseVisualStyleBackColor = false;
@@ -94,11 +92,10 @@
             hr_textbar.BackColor = Color.FromArgb(240, 64, 32);
             hr_textbar.BorderStyle = BorderStyle.None;
             hr_textbar.Font = new Font("MV Boli", 32F, FontStyle.Bold, GraphicsUnit.Point);
-            hr_textbar.Location = new Point(166, 248);
-            hr_textbar.Margin = new Padding(2);
+            hr_textbar.Location = new Point(258, 392);
             hr_textbar.Multiline = true;
             hr_textbar.Name = "hr_textbar";
-            hr_textbar.Size = new Size(109, 71);
+            hr_textbar.Size = new Size(170, 112);
             hr_textbar.TabIndex = 7;
             hr_textbar.Text = "52";
             hr_textbar.TextAlign = HorizontalAlignment.Center;
@@ -109,26 +106,23 @@
             min_textbar.BackColor = Color.FromArgb(240, 64, 32);
             min_textbar.BorderStyle = BorderStyle.None;
             min_textbar.Font = new Font("MV Boli", 32F, FontStyle.Bold, GraphicsUnit.Point);
-            min_textbar.Location = new Point(279, 248);
-            min_textbar.Margin = new Padding(2);
+            min_textbar.Location = new Point(434, 392);
             min_textbar.Multiline = true;
             min_textbar.Name = "min_textbar";
-            min_textbar.Size = new Size(112, 61);
+            min_textbar.Size = new Size(174, 96);
             min_textbar.TabIndex = 8;
             min_textbar.Text = "52";
             min_textbar.TextAlign = HorizontalAlignment.Center;
-            min_textbar.TextChanged += min_textbar_TextChanged;
             // 
             // sec_textbar
             // 
             sec_textbar.BackColor = Color.FromArgb(240, 64, 32);
             sec_textbar.BorderStyle = BorderStyle.None;
             sec_textbar.Font = new Font("MV Boli", 32F, FontStyle.Bold, GraphicsUnit.Point);
-            sec_textbar.Location = new Point(395, 248);
-            sec_textbar.Margin = new Padding(2);
+            sec_textbar.Location = new Point(614, 392);
             sec_textbar.Multiline = true;
             sec_textbar.Name = "sec_textbar";
-            sec_textbar.Size = new Size(117, 61);
+            sec_textbar.Size = new Size(182, 96);
             sec_textbar.TabIndex = 9;
             sec_textbar.Text = "52";
             sec_textbar.TextAlign = HorizontalAlignment.Center;
@@ -138,14 +132,27 @@
             // 
             timer1.Tick += timer1_Tick;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("MV Boli", 32F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(346, 288);
+            label1.Name = "label1";
+            label1.Size = new Size(387, 85);
+            label1.TabIndex = 10;
+            label1.Text = "Keep going!";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleDimensions = new SizeF(14F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.pomodoro_photo6;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(671, 539);
+            ClientSize = new Size(1044, 851);
+            Controls.Add(label1);
             Controls.Add(sec_textbar);
             Controls.Add(min_textbar);
             Controls.Add(hr_textbar);
@@ -155,7 +162,6 @@
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Location = new Point(1200, 440);
-            Margin = new Padding(2);
             Name = "Form1";
             StartPosition = FormStartPosition.Manual;
             Text = "Form1";
@@ -173,5 +179,6 @@
         private TextBox min_textbar;
         private TextBox sec_textbar;
         private System.Windows.Forms.Timer timer1;
+        private Label label1;
     }
 }
