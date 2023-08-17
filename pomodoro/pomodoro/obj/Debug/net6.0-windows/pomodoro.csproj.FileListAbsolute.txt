@@ -33,3 +33,21 @@ C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\refin
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.pdb
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.genruntimeconfig.cache
 C:\Users\barry\Desktop\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\ref\pomodoro.dll
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\bin\Debug\net6.0-windows\pomodoro.exe
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\bin\Debug\net6.0-windows\pomodoro.deps.json
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\bin\Debug\net6.0-windows\pomodoro.runtimeconfig.json
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\bin\Debug\net6.0-windows\pomodoro.dll
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\bin\Debug\net6.0-windows\pomodoro.pdb
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.Form1.resources
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.Properties.Resources.resources
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.csproj.GenerateResource.cache
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.AssemblyInfo.cs
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.dll
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\refint\pomodoro.dll
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.pdb
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\pomodoro.genruntimeconfig.cache
+C:\Users\User\Desktop\github projects\pomodoro\pomodoro\pomodoro\obj\Debug\net6.0-windows\ref\pomodoro.dll

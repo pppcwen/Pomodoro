@@ -1,8 +1,20 @@
 # pomodoro
-~~setTime可以設定時間並記住，reset會返回記住的時間
-輸入時間時要擋住illegal format~~
-能夠設定時間並倒數
-設置時間時只能夠打出數字
-reset能回到上一次設定的時間
-開始時無法按reset和set time直到按下stop
-只有在按下set time到按下ok之間能更改時間
+## About
+It's a Project Collaboration exercise using C# and Github.
+## Learning Objective
+- Understanding C# Windows Form Application.
+    - Understanding components such as **label、buttom、timer**.
+    - Writing Event handling functions for these conponents.
+- Learning Github version control and collaboration.
+    - Creating remote repostories.
+    - Understanding **add、commit、pull、push、clone** commands.
+    - Resolve conflicts
+## Showcase
+### set time
+![set time](./set%20time.png)
+### start
+![start](./start.png)
+### running
+![running](./running.png)
+### Congratulations
+![Congratulations](./Congratulations.png)
