@@ -1,4 +1,4 @@
-# pomodoro
+# Pomodoro
 ## About
 It's a Project Collaboration exercise using C# and Github.
 ## Learning Objective
