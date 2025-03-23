@@ -1,6 +1,6 @@
 # Pomodoro
 ## About
-It's a Project Collaboration exercise using C# and Github.
+It's a Project collaboration exercise using C# and Github.
 ## Learning Objective
 - Understanding C# Windows Form Application.
     - Understanding components such as **label、buttom、timer**.
